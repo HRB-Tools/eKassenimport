@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Kassenimport</title>
+</head>
+<body>
+  <ul id="nav-bar" class="nav-bar">
+      <li onmousedown="importieren()">Einstellungen</li>
+      <li onmousedown="einlesen()">Einlesen</li>
+  </ul>
+<div id="success" class="invis"><div id="stext">Success!</div></div>
+  <form class="fieldValues" id="fieldValues">
+      <div class="Pflichtfelder" id="Pflichtfelder">
+        <label for="Konto">Konto:</br></label>
+        <input type="number" id="Konto"></br>
+        <label for="Gegenkonto">Gegenkonto:</br></label>
+        <input type="number" id="Gegenkonto"></br>
+        <label for="SollHaben">SollHaben:</br></label>
+        <input type="number" id="SollHaben"></br>
+        <label for="BU">BU-Schl&uumlssel:</br></label>
+        <input type="number" id="BU"></br>
+        <label for="Umsatz">Umsatz:</br></label>
+        <input type="number" id="Umsatz"></br>
+        <label for="Datum">Datum:</br></label>
+        <input type="number" id="Datum"></br>
+      </div>
+      <div class="Optional" id="Optional">
+        <label for="Belegfeld1">Belegfeld 1:</br></label>
+        <input type="number" id="Belegfeld1"></br>
+        <label for="Buchungstext">Buchungstext:</br></label>
+        <input type="number" id="Buchungstext"></br>
+        <label for="WKZ">WKZ:</br></label>
+        <input type="number" id="WKZ"></br>
+        <label for="lfdNr">Laufende Nummer:</br></label>
+        <input type="number" id="lfdNr"></br>
+      </div>
+      <div class="format" id="format">
+        <label for="separator">Feldseparator:</br></label>
+        <input type="text" id="separator"></br>
+        <label for="newline">Datensatzseparator:</br></label>
+        <input type="text" id="newline"></br>
+        <div class="date" id="date">
+          <label for="dateSeparator">Datumstrennzeichen:</br></label>
+          <input type="text" id="dateSeparator"></br>
+          <label for="day">Tag:</br></label>
+          <input id="day" type="number"></br>
+          <label for="month">Monat:</br></label>
+          <input type="number" id="month"></br>
+          <label for="year">Jahr:</br></label>
+          <input type="number" id="year"></br>
+        </div></br>
+      </div>
+      <div class="alternative" id="alternative">
+        <label for="umsatzSoll">Umsatz Soll:</br></label>
+        <input type="number" id="umsatzSoll"></br>
+        <label for="umsatzHaben">Umsatz Haben:</br></label>
+        <input type="number" id="umsatzHaben"></br>
+      </div>
+    </form>
+  <script src="js/kassenimport.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/kassenimport.js"></script>
+  <input type="file" id="fileinput">
+</body>
+</html>
